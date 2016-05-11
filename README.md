@@ -1,13 +1,3 @@
-```
-  _               __
- |_)   _|_  _ __ (_  o _   _   _|
- |_) \/ |_ (/_   __) | /_ (/__(_|
-     /        |  _.     _. (_   _ ._ o ._ _|_
-            \_| (_| \/ (_| __) (_ |  | |_) |_
-                                       |
-            »»  bit.ly/bytesized  ««
-```
-
 # octomate
 
 ```
@@ -31,6 +21,16 @@ TODO: add a usage example.
 ## About This Repository
 
 This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
+
+```
+  _               __
+ |_)   _|_  _ __ (_  o _   _   _|
+ |_) \/ |_ (/_   __) | /_ (/__(_|
+     /        |  _.     _. (_   _ ._ o ._ _|_
+            \_| (_| \/ (_| __) (_ |  | |_) |_
+                                       |
+            »»  bit.ly/bytesized  ««
+```
 
 ## Byte-Sized What?!
 
