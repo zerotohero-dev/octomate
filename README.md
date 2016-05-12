@@ -18,7 +18,7 @@ TODO: add a usage example.
 
 ## About This Repository
 
-This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
+This repository is a part of [Byte-Sized JavaScript Bi-Weekly VideoCast][vidcast].
 
 ```
   _               __
