@@ -1,0 +1,34 @@
+{
+  "name": "octomate",
+  "version": "0.0.1",
+  "description": "An automation helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsbites/octomate.git"
+  },
+  "keywords": [
+    "automation",
+    "automate",
+    "octomate"
+  ],
+  "author": "Volkan Ozcelik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsbites/octomate/issues"
+  },
+  "homepage": "https://github.com/jsbites/octomate#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "remove": "^0.1.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babil": "^0.4.4"
+  }
+}
