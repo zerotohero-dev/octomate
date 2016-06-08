@@ -1,6 +1,6 @@
 {
   "name": "octomate",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "An automation helper",
   "main": "bin/octomate.js",
   "bin": "bin/octomate.js",
