@@ -13,7 +13,11 @@ TODO: add a summary.
 
 ## Usage Example
 
-TODO: add a usage example.
+// TODO: add a usage example.
+
+// TODO: add a link to https://github.com/jsbites/automate-all-the-thingz and to related episodes as a usage example.
+
+// TODO: add links for episodes that each of the other jsbites projecs are covered.
 
 ## About This Repository
 
