@@ -28,7 +28,7 @@ var TEMP_DIR = (0, _path.join)(__dirname, 'sources'); /*
                                                        *     )o)( ( o )( o ) )(o(
                                                        *    /o/ |  `-'  `-'  | \o\
                                                        *    \ \/   OctOmate   \/ /
-                                                       * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                       *  ~ ~~~~~~~~~~~~~~~~~~~~~~ ~
                                                        *
                                                        * This project is a part of the “Byte-Sized JavaScript” videocast.
                                                        *
@@ -39,7 +39,7 @@ var TEMP_DIR = (0, _path.join)(__dirname, 'sources'); /*
                                                        * Send your comments, suggestions, and feedback to <me@volkan.io>.
                                                        */
 
-var PACKAGE_NAME_REG_EXP = /\/(.*)\.git/;
+var PACKAGE_NAME_REG_EXP = /\/([^/]*)\.git/;
 
 var prepareWorkspace = function prepareWorkspace() {
     return new Promise(function (resolve) {
@@ -240,7 +240,8 @@ prepareWorkspace().then(prepareCommands).then(cloneTheMasterBranch).then(getPack
     var name = _ref7.name;
     return (0, _log.log)('Successfully executed all tasks for “' + name + '”.');
 }, function (err) {
-    console.log(err);throw new Error({ reason: 'Failed to execute one or more tasks for “' + name + '”!' });
+    console.log(err);
+    throw new Error({ reason: 'Failed to execute one or more tasks for “' + name + '”!' });
 });
 
 //# sourceMappingURL=octomate.js.map

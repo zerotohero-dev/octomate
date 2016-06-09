@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", {
  *     )o)( ( o )( o ) )(o(
  *    /o/ |  `-'  `-'  | \o\
  *    \ \/   OctOmate   \/ /
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *  ~ ~~~~~~~~~~~~~~~~~~~~~~ ~
  *
  * This project is a part of the “Byte-Sized JavaScript” videocast.
  *
