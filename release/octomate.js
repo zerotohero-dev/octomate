@@ -83,7 +83,7 @@ var cloneTheMasterBranch = function cloneTheMasterBranch(_ref) {
 
         command.on('close', function (code) {
             if (code === 0) {
-                (0, _log.log)('Successfully cloned “' + url + '” into “' + TEMP_DIR + '”.');
+                (0, _log.log)('Successfully cloned \u201C' + url + '\u201D into \u201C' + TEMP_DIR + '\u201D.');
 
                 resolve({ url: url });
 
@@ -101,7 +101,7 @@ var getPackageVersion = function getPackageVersion(_ref2) {
         var packageName = url.match(PACKAGE_NAME_REG_EXP)[1];
 
         if (!packageName) {
-            (0, _log.error)('Cannot find the package name for “' + url + '”. Exiting.');
+            (0, _log.error)('Cannot find the package name for \u201C' + url + '\u201D. Exiting.');
 
             reject({ reason: 'Package name not found.' });
 
@@ -112,18 +112,16 @@ var getPackageVersion = function getPackageVersion(_ref2) {
 
         (0, _fs.readFile)(packageFilePath, { encoding: 'utf8' }, function (err, data) {
             if (err) {
-                (0, _log.error)('Cannot read the file at “' + packageFilePath + '”. Exiting.');
+                (0, _log.error)('Cannot read the file at \u201C' + packageFilePath + '\u201D. Exiting.');
 
                 reject({ error: err, reason: 'Cannot read the package file.' });
 
                 return;
             }
 
-            var _JSON$parse = JSON.parse(data);
-
-            var version = _JSON$parse.version;
-            var name = _JSON$parse.name;
-
+            var _JSON$parse = JSON.parse(data),
+                version = _JSON$parse.version,
+                name = _JSON$parse.name;
 
             resolve({ version: version, name: name });
         });
@@ -131,8 +129,8 @@ var getPackageVersion = function getPackageVersion(_ref2) {
 };
 
 var compareLocalVersionAgainstNpmVersion = function compareLocalVersionAgainstNpmVersion(_ref3) {
-    var localVersion = _ref3.version;
-    var name = _ref3.name;
+    var localVersion = _ref3.version,
+        name = _ref3.name;
     return new Promise(function (resolve, reject) {
         var buffer = [];
 
@@ -167,7 +165,7 @@ var compareLocalVersionAgainstNpmVersion = function compareLocalVersionAgainstNp
 
 var executeNpmCommand = function executeNpmCommand(commandName, name, resolve, reject, skip) {
     if (skip) {
-        (0, _log.log)('Skipped: `npm ' + commandName + '` for “' + name + '”.');
+        (0, _log.log)('Skipped: `npm ' + commandName + '` for \u201C' + name + '\u201D.');
 
         resolve({ name: name, skip: skip });
 
@@ -178,11 +176,11 @@ var executeNpmCommand = function executeNpmCommand(commandName, name, resolve, r
 
     switch (commandName) {
         case 'install':
-            (0, _log.log)('Will install “' + name + '”. This might take a while…');
+            (0, _log.log)('Will install \u201C' + name + '\u201D. This might take a while\u2026');
 
             break;
         case 'test':
-            (0, _log.log)('Will test “' + name + '”. This might take a while…');
+            (0, _log.log)('Will test \u201C' + name + '\u201D. This might take a while\u2026');
 
             break;
         default:
@@ -198,7 +196,7 @@ var executeNpmCommand = function executeNpmCommand(commandName, name, resolve, r
     });
 
     command.on('close', function (code) {
-        (0, _log.log)('`npm ' + commandName + '` closed with code “' + code + '”.');
+        (0, _log.log)('`npm ' + commandName + '` closed with code \u201C' + code + '\u201D.');
 
         if (code === 0) {
             resolve({ name: name, skip: skip });
@@ -213,24 +211,24 @@ var executeNpmCommand = function executeNpmCommand(commandName, name, resolve, r
 };
 
 var installModule = function installModule(_ref4) {
-    var name = _ref4.name;
-    var skip = _ref4.skip;
+    var name = _ref4.name,
+        skip = _ref4.skip;
     return new Promise(function (resolve, reject) {
         return executeNpmCommand('install', name, resolve, reject, skip);
     });
 };
 
 var testModule = function testModule(_ref5) {
-    var name = _ref5.name;
-    var skip = _ref5.skip;
+    var name = _ref5.name,
+        skip = _ref5.skip;
     return new Promise(function (resolve, reject) {
         return executeNpmCommand('test', name, resolve, reject, skip);
     });
 };
 
 var publishModule = function publishModule(_ref6) {
-    var name = _ref6.name;
-    var skip = _ref6.skip;
+    var name = _ref6.name,
+        skip = _ref6.skip;
     return new Promise(function (resolve, reject) {
         return executeNpmCommand('publish', name, resolve, reject, skip);
     });
@@ -238,10 +236,10 @@ var publishModule = function publishModule(_ref6) {
 
 prepareWorkspace().then(prepareCommands).then(cloneTheMasterBranch).then(getPackageVersion).then(compareLocalVersionAgainstNpmVersion).then(installModule).then(testModule).then(publishModule).then(function (_ref7) {
     var name = _ref7.name;
-    return (0, _log.log)('Successfully executed all tasks for “' + name + '”.');
+    return (0, _log.log)('Successfully executed all tasks for \u201C' + name + '\u201D.');
 }, function (err) {
     console.log(err);
-    throw new Error({ reason: 'Failed to execute one or more tasks for “' + name + '”!' });
+    throw new Error({ reason: 'Failed to execute one or more tasks for \u201C' + name + '\u201D!' });
 });
 
 //# sourceMappingURL=octomate.js.map

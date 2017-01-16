@@ -25,7 +25,7 @@ var log = function log() {
     stuff[_key] = arguments[_key];
   }
 
-  return console.log("\n ● " + stuff + "\n");
+  return console.log("\n \u25CF " + stuff + "\n");
 };
 var info = function info() {
   var _console;
@@ -37,7 +37,7 @@ var error = function error() {
     stuff[_key2] = arguments[_key2];
   }
 
-  return console.error("\n ● " + stuff + "\n");
+  return console.error("\n \u25CF " + stuff + "\n");
 };
 
 exports.log = log;
