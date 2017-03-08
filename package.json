@@ -16,7 +16,7 @@
     "automate",
     "octomate"
   ],
-  "author": "Volkan Ozcelik",
+  "author": "Volkan Ozcelik <me@volkan.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsbites/octomate/issues"
