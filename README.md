@@ -77,11 +77,7 @@ Note that you repository should have predefined `install`, `test`, and `publish`
 
 ## Dependencies
 
-You need to configure NPM on your machine so that you can push the changes.
-
-For development, you’ll need a recent version of [Node.JS](https://nodejs.org) and [NPM](https://npmjs.org).
-
-For production use, any Node.JS version 4.0 and above should be good, though I’d still suggest v7.0 and above.
+You will need the **current** version of [Node.JS](https://nodejs.org/) with all the bells and whistles — [You can install it from nodejs.org](https://nodejs.org/).
 
 ## How to Develop
 
