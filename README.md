@@ -1,3 +1,11 @@
+[![tests][tests]][tests-url]
+[![deps][deps]][deps-url]
+
+[tests]: https://img.shields.io/travis/jsbites/octomate.svg
+[tests-url]: https://travis-ci.org/jsbites/octomate
+[deps]: https://david-dm.org/jsbites/octomate.svg
+[deps-url]: https://david-dm.org/jsbites/octomate
+
 ```
         __,-“”-.__
    |\  / ,-.  ,-. \  /|
