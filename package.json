@@ -5,7 +5,7 @@
   "main": "bin/octomate.js",
   "bin": "bin/octomate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"The best test environment is production!\" && exit 0"
   },
   "repository": "git+https://github.com/jsbites/octomate.git",
   "keywords": [
