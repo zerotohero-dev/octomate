@@ -1,6 +1,6 @@
 {
   "name": "octomate",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "An automation helper",
   "main": "bin/octomate.js",
   "bin": "bin/octomate.js",
@@ -9,9 +9,22 @@
   },
   "repository": "git+https://github.com/jsbites/octomate.git",
   "keywords": [
-    "automation",
     "automate",
-    "octomate"
+    "automation",
+    "byte-sized javascript",
+    "byte-sized",
+    "bytesized.tv",
+    "demos",
+    "education",
+    "javascript",
+    "learning",
+    "octomate",
+    "podcast",
+    "screencast",
+    "tutorials",
+    "vidcast",
+    "videocast",
+    "videos"
   ],
   "author": "Volkan Özçelik <me@volkan.io> (https://volkan.io/)",
   "license": "MIT",

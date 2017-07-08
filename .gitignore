@@ -52,6 +52,8 @@ node_modules
 # IDE-Specific:
 .idea
 .c9
+.vscode
+.history
 
 # OS-Specific:
 .DS_Store
