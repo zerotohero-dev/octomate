@@ -16,4 +16,4 @@
 
 language: node_js
 node_js:
-  - "7.9.0"
+  - "8.1.3"
