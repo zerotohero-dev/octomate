@@ -19,28 +19,6 @@
 
 `octomate` compares the npm version of a given library to its git version. If there is a mismatch, it runs tests against the current git version and publishes the library to npm after the tests pass. — It is kind of like poor man’s CI.
 
-## About This Repository
-
-This repository is a part of [Byte-Sized JavaScript Weekly VideoCast][vidcast].
-
-```
-  _               __
- |_)   _|_  _ __ (_  o _   _   _|
- |_) \/ |_ (/_   __) | /_ (/__(_|
-     /        |  _.     _. (_   _ ._ o ._ _|_
-            \_| (_| \/ (_| __) (_ |  | |_) |_
-                                       |
-            »»  bytesized.tv  ««
-```
-
-## Byte-Sized What?!
-
-[Byte-Sized JavaScript][vidcast].
-
-It is a compilation of short (*around ten minutes*) monthly screencasts about **JavaScript** and related technologies.
-
-[vidcast]: https://bytesized.tv/ "ByteSized.TV"
-
 ## About `octomate`
 
 `octomate` is created as an automation-helper:
@@ -141,4 +119,10 @@ We are committed to making participation in this project a harassment-free exper
 
 [See the code of conduct for details](CODE_OF_CONDUCT.md).
 
-<!-- -->
+## A [ByteSized.TV][vidcast] Project
+
+This repository is a part of the [Byte-Sized JavaScript VideoCasts][vidcast].
+
+It is a compilation of short (*around ten minutes*) screencasts about **JavaScript** and related technologies.
+
+[**Learn**, **explore**, and **have fun**][vidcast]!
