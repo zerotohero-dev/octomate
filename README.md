@@ -1,10 +1,16 @@
 [![tests][tests]][tests-url]
 [![deps][deps]][deps-url]
+[![npm][npm]][npm-url]
+[![license][license]][license-url]
 
 [tests]: https://img.shields.io/travis/jsbites/octomate.svg
 [tests-url]: https://travis-ci.org/jsbites/octomate
 [deps]: https://david-dm.org/jsbites/octomate.svg
 [deps-url]: https://david-dm.org/jsbites/octomate
+[npm-url]: https://www.npmjs.com/package/octomate
+[npm]: https://img.shields.io/npm/v/octomate.svg
+[license]: https://img.shields.io/npm/l/octomate.svg
+[license-url]: https://www.npmjs.com/package/octomate
 
 ```
         __,-“”-.__
